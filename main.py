@@ -106,7 +106,11 @@ class App(tk.Tk):
             x = self.re.find("+")
             if x != -1:
                 l = self.re.split("+")
-                return  '=' + str(float(l[0]) + float(l[1]))
+                rr = [float(i) for i in l if i != '']
+                r = 0
+                for i in rr:
+                    r += i
+                return  '=' + str(r)
 
             # -
             x = self.re.find("-")
