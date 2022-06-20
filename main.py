@@ -100,6 +100,7 @@ class App(tk.Tk):
         self.text.delete("1.0", "end")
 
     def cal(self):
+        self.re = self.text.get("1.0", "end")
         try:
             # +
             x = self.re.find("+")
@@ -129,65 +130,65 @@ class App(tk.Tk):
     
     # +
     def buttonP(self):
-        self.re = self.re + '+'
+        # self.re = self.re + '+'
         self.text.insert("end", '+')
 
     # -
     def buttonS(self):
-        self.re = self.re + '-'
+        # self.re = self.re + '-'
         self.text.insert("end", '-')
 
     # *
     def buttonM(self):
-        self.re = self.re + '*'
+        # self.re = self.re + '*'
         self.text.insert("end", '*')
 
     # /
     def buttonD(self):
-        self.re = self.re + '/'
+        # self.re = self.re + '/'
         self.text.insert("end", '/')
 
     def buttonDot(self):
-        self.re = self.re + '.'
+        # self.re = self.re + '.'
         self.text.insert("end", '.')
     def button0(self):
-        self.re = self.re + '0'
+        # self.re = self.re + '0'
         self.text.insert("end", '0')
 
     def button1(self):
-        self.re = self.re + '1'
+        # self.re = self.re + '1'
         self.text.insert("end", '1')
 
     def button2(self):
-        self.re = self.re + '2'
+        # self.re = self.re + '2'
         self.text.insert("end", '2')
 
     def button3(self):
-        self.re = self.re + '3'
+        # self.re = self.re + '3'
         self.text.insert("end", '3')
 
     def button4(self):
-        self.re = self.re + '4'
+        # self.re = self.re + '4'
         self.text.insert("end", '4')
 
     def button5(self):
-        self.re = self.re + '5'
+        # self.re = self.re + '5'
         self.text.insert("end", '5')
 
     def button6(self):
-        self.re = self.re + '6'
+        # self.re = self.re + '6'
         self.text.insert("end", '6')
 
     def button7(self):
-        self.re = self.re + '7'
+        # self.re = self.re + '7'
         self.text.insert("end", '7')
     
     def button8(self):
-        self.re = self.re + '8'
+        # self.re = self.re + '8'
         self.text.insert("end", '8')
     
     def button9(self):
-        self.re = self.re + '9'
+        # self.re = self.re + '9'
         self.text.insert("end", '9')
 
         
